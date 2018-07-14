@@ -1,15 +1,105 @@
 <!doctype html>
 <html>
   <head>
-    <title>WEB1 - html</title>
+    <title>WEB1 - CSS</title>
     <mata charset="utf-8">
+    <style>
+      a{
+        color:black;
+        text-decoration: none;
+
+      }
+      #active{
+        color: red;
+      }
+      .saw{
+        color: gray;
+      }
+      h1{
+        font-size:45px;
+        text-align: center;
+      }
+
+      h1,h2,h3,h4,h5{
+        margin:10px 0px 10px 0px
+        /*위 오른쪽 아래 왼쪽*/
+      }
+
+    </style>
   </head>
 
   <body>
-    <h1><a href="index.html" target="_blank">HTML을 공부해보자</a></h1>
+    <p>
+      <h1><a href="index.html" target="_blank">HTML을 공부해보자</a></h1>
+      <h2>목차</h2>
+      <ul>
+        <li><a href="1.html" target="_blank" class="saw">HTML</a></li>
+        <li><a href="2.html" target="_blank" class="saw" id="active">CSS</a></li>
+        <li><a href="3.html" target="_blank" >JavaScript</a></li>
+      </ul>
+    </p>
+
     <p>
       <h2>CSS</h2>
+      <ul>
+        <li>style</li>
+        <li>속성</li>
+        <li>효과</li>
+        <li>선택자</li>
+      </ul>
 
+      <p style = "text-align:right;"><a href="2-1.html" style =  "color:blue;">다음페이지</a></p>
+
+      <h3>style</h3>
+      style이라는 태그가 CSS를 나타냄<br>
+      head안에 쓰면 전체에 적용<br>
+      style 안에는 선택자 입력<br>
+      선택자 안에는 효과 입력<br>
+      <img src="css선택자.jpg" width="60%"><br>
+      <br>
+    </p>
+
+    <p>
+      <h3>속성</h3>
+      태그 안에 입력<br>
+      style="color:red"
+    </p>
+
+    <p>
+      <h3>효과</h3>
+
+        <h5>색</h5>
+        color
+
+        <h5>언더라인</h5>
+        text-decoration<br>
+        text-decoration: none;<br>
+        text-decoration: Underline;<br>
+
+        <h5>글자크기</h5>
+        font-size : 100px
+
+        <h5>정렬</h5>
+        text-align: center;
+      </p>
+
+      <p>
+        <h3>선택자</h3>
+          <h4>엘리먼트</h4>
+          p, a, h1 과 같은 태그<br>
+          ,로 묶을 수 있음<br>
+          h1, a {}<br>
+          border: 5px solid red;라고 작성 가능 순서 상관x
+
+          <h4>클래스</h4>
+          class="saw" 로 클래스로 묶어줌<br>
+          .saw로 선택자 사용<br>
+          여러개 클래스 가능 class="saw active" 순서 상관 있음 뒤 우선<br>
+
+          <h4>아이디</h4>
+          클래스보다 우선순위가 높음 앞에 써도 ID 우선<br>
+          아이디>클래스>속성<br>
+          단 아이디는 한번만 등장해야한다.
     </p>
 
   </body>
